@@ -2,5 +2,6 @@
     "shell-version": ["3.3.90", "3.4.0"],
     "uuid": "InstallFedoraButton@kparal.redhat.com",
     "name": "Install Fedora Button",
-    "description": "A button in Gnome Shell panel to start Fedora installation"
+    "description": "A button in Gnome Shell panel to start Fedora installation",
+    "url": "https://fedoraproject.org/wiki/Anaconda"
 }
