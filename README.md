@@ -5,7 +5,7 @@ This creates a small button on Gnome Shell top bar that serves as a launcher for
 
 This extension was announced at [Fedora devel list](http://lists.fedoraproject.org/pipermail/devel/2012-April/165234.html) and the reasons for its creation are described there.
 
-![example image](InstallFedoraButton.png)
+![example image](https://github.com/kparal/InstallFedoraButton/raw/master/InstallFedoraButton.png)
 
 How to try it out
 -----------------
