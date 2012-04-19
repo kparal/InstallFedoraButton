@@ -1,16 +1,24 @@
 diff --git a/fedora-live-desktop.ks b/fedora-live-desktop.ks
-index 54a4708..309d71a 100644
+index 54a4708..45a7b00 100644
 --- a/fedora-live-desktop.ks
 +++ b/fedora-live-desktop.ks
-@@ -57,6 +57,11 @@ if [ -f /usr/share/applications/liveinst.desktop ]; then
+@@ -57,6 +57,19 @@ if [ -f /usr/share/applications/liveinst.desktop ]; then
  favorite-apps=['firefox.desktop', 'evolution.desktop', 'empathy.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'openoffice.org-writer.desktop', 'nautilus.desktop', 'anaconda.desktop']
  FOE
  
-+  # enable InstallFedoraButton gnome-shell extension
-+  cat >> /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override << FOE
++  # install InstallFedoraButton gnome-shell extension
++  if [ -e /usr/share/anaconda/gnome-shell/InstallFedoraButton@kparal.redhat.com ]; then
++    # make sure destination exists
++    mkdir -p /usr/share/gnome-shell/extensions/
++    # copy the extension
++    cp -r /usr/share/anaconda/gnome-shell/InstallFedoraButton@kparal.redhat.com /usr/share/gnome-shell/extensions/
++    # enable it
++    cat >> /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override << FOE
 +[org.gnome.shell]
 +enabled-extensions=['InstallFedoraButton@kparal.redhat.com']
 +FOE
++  fi
++
  fi
  
  # rebuild schema cache with any overrides we installed
