@@ -3,7 +3,7 @@ Install Fedora Button for LiveCD
 
 This creates a small button on Gnome Shell top bar that serves as a launcher for Anaconda installer. It uses the same icon and title as the desktop launcher.
 
-This extension was announced at [Fedora devel list](http://lists.fedoraproject.org/pipermail/devel/2012-April/165234.html) and the reasons for its creation are described there.
+This extension was announced at [Fedora devel list](http://lists.fedoraproject.org/pipermail/devel/2012-April/165234.html) and the reasons for its creation are described there. It was then [proposed for inclusion](https://www.redhat.com/archives/anaconda-devel-list/2012-April/msg00212.html) in Anaconda.
 
 ![example image](https://github.com/kparal/InstallFedoraButton/raw/master/InstallFedoraButton.png)
 
